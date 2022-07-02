@@ -1,13 +1,15 @@
-const listContacts = require("./contacts");
-const getContactById = require("./contacts");
-const addContact = require("./contacts");
-const updateById = require("./contacts");
-const removeById = require("./contacts");
+const Contact = require("./contact.js");
+const statusJoiSchema = require("./contact.js");
+const contactsJoiSchema = require("./contact.js");
+const User = require("./user.js");
+const userJoiSchema = require("./user.js");
+const userSchema = require("./user.js");
 
 module.exports = {
-    listContacts,
-    getContactById,
-    addContact,
-    updateById,
-    removeById,
+   Contact,
+   statusJoiSchema,
+   contactsJoiSchema,
+   User,
+   userJoiSchema,
+   userSchema
 }
